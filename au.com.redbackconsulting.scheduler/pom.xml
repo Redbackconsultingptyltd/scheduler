@@ -79,5 +79,6 @@
   <modules>
     <module>au.com.redbackconsulting.scheduler.ui</module>
     <module>au.com.redbackconsulting.scheduler.persistence</module>
+    <module>au.com.redbackconsulting.scheduler.api</module>
   </modules>
 </project>
