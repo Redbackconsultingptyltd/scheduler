@@ -86,16 +86,16 @@ sap.ui.jsview("schdeuler-ui.Master", {
 			press : oController.onPress,
 			cells : [
 				new sap.m.Input({
-					value : "{ADDRTYPE}",
+					value : "{firstName}",
 					editable : false
 				}),
 				new sap.m.Input({
-					value: "{FROM}",
+					value: "{lastName}",
 					editable : false
 					//wrapping : true
 				}), 
 				new sap.m.Input({
-					value: "{TO}",
+					value: "{userId}",
 					editable : false						
 				})
 			]
@@ -106,7 +106,7 @@ sap.ui.jsview("schdeuler-ui.Master", {
 		//template.attachDetailTap(oController.onSelect);
 		
 		//Binding 
-		mList.bindAggregation("items", "/ROOT/ADDRESSES", template);
+		mList.bindAggregation("items", "/", template);
 		oControls.push(subHeader,mList);
  		return new sap.m.Page({
 			title: "{i18n>MasterTitle}",

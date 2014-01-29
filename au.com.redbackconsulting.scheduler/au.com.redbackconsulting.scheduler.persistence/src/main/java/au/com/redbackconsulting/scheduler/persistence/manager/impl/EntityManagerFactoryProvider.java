@@ -27,7 +27,7 @@ public class EntityManagerFactoryProvider {
     public EntityManagerFactory createEntityManagerFactory(DataSource dataSource) {
         final Map<Object, Object> properties = new HashMap<Object, Object>();
         properties.put(PersistenceUnitProperties.NON_JTA_DATASOURCE, dataSource);
-        return Persistence.createEntityManagerFactory("com.sap.hana.cloud.samples.benefits", properties);
+        return Persistence.createEntityManagerFactory("au.com.redbackconsulting.scheduler.persistence", properties);
     }
 
 }

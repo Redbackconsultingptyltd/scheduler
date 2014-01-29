@@ -6,6 +6,8 @@ sap.ui.controller("schdeuler-ui.Master", {
 * @memberOf zmob.Master
 */
 	onInit: function() {
+		
+		/*
 		var URL	=	'http://cbr1saps01.internal.dotars.gov.au:8000/zdoit/zui5/';
     	var data = '{"ROOT":{"EMPLOYEENUMBER":"53723288"}}';   
     	var responseJson = '{"ROOT":{"ISSUCCESSFUL":"X","ADDRESSES":[{"ADDRTYPE":"1","FROM":"2007-04-04","TO":"2008-01-04"},{"ADDRTYPE":"1","FROM":"2008-01-15","TO":"9999-12-31"},{"ADDRTYPE":"2","FROM":"2007-04-16","TO":"9999-12-31"},{"ADDRTYPE":"3","FROM":"2007-04-16","TO":"9999-12-31"},{"ADDRTYPE":"3","FROM":"2008-01-15","TO":"9999-12-31"},{"ADDRTYPE":"3","FROM":"2011-10-08","TO":"9999-12-31"}],"MESSAGES":[]}}';
@@ -46,8 +48,16 @@ sap.ui.controller("schdeuler-ui.Master", {
             oModel.setJSON(responseJson,false);
             sap.ui.getCore().setModel(oModel);
         	}
+        	*/
+		this.loadModel();
         },
 
+    	loadModel : function() {
+    		if (!this.getView().getModel()) {
+    			this.getView().setModel(new sap.ui.model.json.JSONModel());
+    		}
+    		this.getView().getModel().loadData("au.com.redbackconsulting.scheduler.api/api/user/profile", null, false);
+    	},
 /**
 * Similar to onAfterRendering, but this hook is invoked before the controller's View is re-rendered
 * (NOT before the first rendering! onInit() is used for that one!).
