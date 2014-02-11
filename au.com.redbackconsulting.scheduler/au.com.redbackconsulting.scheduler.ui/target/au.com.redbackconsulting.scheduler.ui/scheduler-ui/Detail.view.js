@@ -1,11 +1,11 @@
-sap.ui.jsview("schdeuler-ui.Detail", {
+sap.ui.jsview("scheduler-ui.Detail", {
 
 	/** Specifies the Controller belonging to this View. 
 	* In the case that it is not implemented, or that "null" is returned, this View does not have a Controller.
 	* @memberOf scheduler-ui.Detail
 	*/ 
 	getControllerName : function() {
-		return "schdeuler-ui.Detail";
+		return "scheduler-ui.Detail";
 	},
 
 	/** Is initially called once after the Controller has been instantiated. It is the place where the UI is constructed. 

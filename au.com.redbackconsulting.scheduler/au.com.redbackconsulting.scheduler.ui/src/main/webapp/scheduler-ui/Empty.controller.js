@@ -1,4 +1,4 @@
-sap.ui.controller("schdeuler-ui.Empty", {
+sap.ui.controller("scheduler-ui.Empty", {
 
 /**
 * Called when a controller is instantiated and its View controls (if available) are already created.
@@ -21,7 +21,7 @@ sap.ui.controller("schdeuler-ui.Empty", {
 /**
 * Called when the View has been rendered (so its HTML is part of the document). Post-rendering manipulations of the HTML could be done here.
 * This hook is the same one that SAPUI5 controls get after being rendered.
-* @memberOf zmob.Empty
+* @memberOf scheduler-ui.Empty
 */
 //	onAfterRendering: function() {
 //

@@ -27,5 +27,7 @@
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
+	<classpathentry kind="con" path="com.sap.ide.ui5.libsclasspathcontainer/SAPUI5 Core Libraries"/>
+	<classpathentry kind="con" path="com.sap.ide.ui5.libsclasspathcontainer/SAPUI5 Server Side Libraries"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>

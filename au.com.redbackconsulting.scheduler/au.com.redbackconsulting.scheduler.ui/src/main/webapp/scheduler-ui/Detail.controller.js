@@ -1,7 +1,7 @@
 jQuery.sap.require("sap.m.MessageBox");
 jQuery.sap.require("sap.m.MessageToast");
 
-sap.ui.controller("schdeuler-ui.Detail", {
+sap.ui.controller("scheduler-ui.Detail", {
 
 /**
 * Called when a controller is instantiated and its View controls (if available) are already created.

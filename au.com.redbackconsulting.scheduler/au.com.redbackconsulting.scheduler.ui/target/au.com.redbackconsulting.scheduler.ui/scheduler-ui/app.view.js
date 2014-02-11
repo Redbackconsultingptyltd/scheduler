@@ -5,7 +5,7 @@ sap.ui.jsview("scheduler-ui.app", {
 	* @memberOf scheduler-ui.app
 	*/ 
 	getControllerName : function() {
-		return "schdeuler-ui.app";
+		return "scheduler-ui.app";
 	},
 
 	/** Is initially called once after the Controller has been instantiated. It is the place where the UI is constructed. 
@@ -16,7 +16,7 @@ sap.ui.jsview("scheduler-ui.app", {
 		
 		// to avoid scroll bars on desktop the root view must be set to block display
 		//this.setDisplayBlock(true);
-		// create app
+		// create scheduler-ui.app
 		this.app = new sap.m.SplitApp();
 		// load the master page
 		var master = sap.app.viewCache.get("Master");

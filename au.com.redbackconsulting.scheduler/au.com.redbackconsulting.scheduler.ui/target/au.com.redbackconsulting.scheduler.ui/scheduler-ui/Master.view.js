@@ -1,16 +1,16 @@
-sap.ui.jsview("schdeuler-ui.Master", {
+sap.ui.jsview("scheduler-ui.Master", {
 
 	/** Specifies the Controller belonging to this View. 
 	* In the case that it is not implemented, or that "null" is returned, this View does not have a Controller.
-	* @memberOf zmob.Master
+	* @memberOf scheduler-ui.Master
 	*/ 
 	getControllerName : function() {
-		return "schdeuler-ui.Master";
+		return "scheduler-ui.Master";
 	},
 
 	/** Is initially called once after the Controller has been instantiated. It is the place where the UI is constructed. 
 	* Since the Controller is given to this method, its event handlers can be attached right away. 
-	* @memberOf zmob.Master
+	* @memberOf scheduler-ui.Master
 	*/ 
 	createContent : function(oController) {
 		var oControls = [];

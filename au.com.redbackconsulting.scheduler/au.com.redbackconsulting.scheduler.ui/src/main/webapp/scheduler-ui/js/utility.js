@@ -1,1 +1,0 @@
-jQuery.sap.declare("sap.app.utility");
