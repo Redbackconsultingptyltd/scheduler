@@ -52,7 +52,7 @@ public class BreakSchedule implements Serializable,IDBEntity {
 	private boolean active;
 
 	@ManyToOne
-	@JoinColumn(name="ACCOUNT_ID",referencedColumnName="ACCOUNT_ID")
+	@JoinColumn(name="ACCOUNT_ID",referencedColumnName="ACCOUNT_ID", insertable=false, updatable=false)
 	private Org Org;
 	
 	public String getSeqno() {
